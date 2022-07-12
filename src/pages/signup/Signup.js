@@ -31,8 +31,6 @@ export default function Signup() {
       setPassword(event.target.value);
     } else if (event.target.type === "text") {
       setDisplayname(event.target.value);
-    } else if (event.target.type == "email") {
-      setEmail(event.target.value);
     }
   };
 
