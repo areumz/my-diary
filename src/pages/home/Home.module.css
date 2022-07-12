@@ -1,0 +1,19 @@
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.home_tit {
+  display: inline-block;
+  font-size: 3em;
+  margin: 150px 350px 0 200px;
+  color: #e55451;
+  text-shadow: 3px 3px 3px #413839;
+}
+
+.home_txt {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 15px 350px 0 270px;
+  color: #493d26;
+}

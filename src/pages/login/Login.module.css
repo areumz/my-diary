@@ -1,0 +1,60 @@
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.login_form {
+  width: 360px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.login_form fieldset {
+  border-radius: 10px;
+  background-color: #cde3b0;
+  border: 1px solid #aabb93;
+  text-align: center;
+}
+
+.login_form legend {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.login_form label {
+  display: block;
+  margin: 20px auto;
+  font-weight: 700;
+}
+
+.login_form input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 6px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.login_form input:focus {
+  outline: none;
+  border-bottom: 1px solid teal;
+}
+
+.login_form button {
+  margin-top: 40px;
+  float: right;
+  background-color: teal;
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.pending_txt {
+  display: inline-block;
+  color: #3a3b3c;
+  margin-top: 10px;
+}

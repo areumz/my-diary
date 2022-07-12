@@ -1,0 +1,26 @@
+.nav .tit {
+  display: inline-block;
+}
+
+.nav .list_nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0;
+}
+
+.nav a {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding-right: 40px;
+}
+
+.logout_btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 700;
+}
