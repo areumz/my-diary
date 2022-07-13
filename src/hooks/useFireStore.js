@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, deleteDoc, doc } from "firebase/firestore";
 import { appFireStore, timeStamp } from "../firebase/config";
 
 // document : 파이어스토어에 document 생성 요청 -> 생성한 document 반환
@@ -27,6 +27,13 @@ const storeReducer = (state, action) => {
         document: null,
         success: false,
         error: action.payload,
+      };
+    case "deleteDoc":
+      return {
+        isPending: false,
+        document: action.payload,
+        success: true,
+        error: null,
       };
     default:
       return state;
@@ -56,7 +63,16 @@ export const useFireStore = (transaction) => {
   };
 
   // 컬렉션 내 문서 제거
-  const deleteDocument = (id) => {};
+  const deleteDocument = async (id) => {
+    dispatch({ type: "isPending" });
+
+    try {
+      const docRef = await deleteDoc(doc(colRef, id));
+      dispatch({ type: "deleteDoc", payload: docRef });
+    } catch (error) {
+      dispatch({ type: "error", payload: error.message });
+    }
+  };
 
   return { response, addDocument, deleteDocument };
 };
