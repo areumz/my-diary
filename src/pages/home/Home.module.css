@@ -2,18 +2,58 @@ body {
   font-family: "Nanum Gothic", sans-serif;
 }
 
-.home_tit {
-  display: inline-block;
-  font-size: 3em;
-  margin: 150px 350px 0 200px;
-  color: #e55451;
-  text-shadow: 3px 3px 3px #413839;
+.cont {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 0 30px;
 }
 
-.home_txt {
-  display: block;
-  font-size: 1.5em;
+.side_menu form {
+  padding: 20px;
+  background-color: #9cb071;
+  border-radius: 10px;
+}
+
+.side_menu fieldset {
+  border: none;
+}
+
+.side_menu legend {
+  font-size: 1.6em;
   font-weight: 700;
-  margin: 15px 350px 0 270px;
-  color: #493d26;
+  margin-bottom: 20px;
+  color: #3a3b3c;
+}
+
+.side_menu input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.side_menu label {
+  display: block;
+  margin: 20px auto;
+  color: #fff;
+  font-weight: 700;
+}
+
+.side_menu textarea {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.side_menu button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
 }

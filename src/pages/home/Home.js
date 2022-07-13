@@ -1,10 +1,14 @@
 import styles from "./Home.module.css";
+import { useState } from "react";
+import DiaryForm from "./DiaryForm";
 
 export default function Home() {
   return (
-    <div>
-      <strong className={styles.home_tit}>💟나만의 비밀 일기장</strong>
-      <span className={styles.home_txt}>가입해서 시작해보세요!</span>
-    </div>
+    <main className={styles.cont}>
+      <aside className={styles.side_menu}>
+        <DiaryForm />
+      </aside>
+      <ul className={styles.content_list}>diary list</ul>
+    </main>
   );
 }
