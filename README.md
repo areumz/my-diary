@@ -2,7 +2,8 @@
 
 > 회원가입과 로그인을 통해 간단한 나만의 일기장 만들기
 
-> https://my-diary-1230d.web.app
+> https://my-diary-1230d.web.app  
+> https://my-diary-1230d.firebaseapp.com/
 
 </br>
 
