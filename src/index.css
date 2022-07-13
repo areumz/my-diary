@@ -12,3 +12,15 @@ body {
 ul {
   list-style-type: none;
 }
+
+.loading-icon {
+  display: block;
+  margin: 120px auto 10px auto;
+}
+
+.loading-txt {
+  display: block;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+}

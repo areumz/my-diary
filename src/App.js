@@ -34,7 +34,8 @@ function App() {
         </BrowserRouter>
       ) : (
         <>
-          <img src={loading} alt="로딩중" />
+          <img src={loading} alt="로딩중" className="loading-icon" />
+          <div className="loading-txt">로딩중입니다...</div>
         </>
       )}
     </div>
